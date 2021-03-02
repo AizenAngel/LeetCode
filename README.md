@@ -1,1 +1,1 @@
-LeetCode tasks i solved
+LeetCode problems i solved
