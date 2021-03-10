@@ -7,7 +7,7 @@
 
 int jump(std::vector<int>& nums) {
 
-    if (n == 1)
+    if (nums.size() == 1)
         return 0;
 
     int n = nums.size();
