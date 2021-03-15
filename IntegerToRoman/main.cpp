@@ -38,10 +38,8 @@ string roman(int n){
         else if(pom < 9){
             for(int j = 0; j < pom - 5; j++){
                 res = vec[i][0] + res;
-                //cout<<vec[i][0]<<"\n";
             }
             
-            //cout<<vec[i][1]<<"\n";
             res = vec[i][1] + res;
         }
 
