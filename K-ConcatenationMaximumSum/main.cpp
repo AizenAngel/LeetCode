@@ -18,10 +18,10 @@ int kConcatenationMaxSum(vector<int>&a, int k) {
     auto res = maxSubArray(a);
     int prev = res.first;
     int ans = res.second;
-    
+
     if(prev <= 0 || k == 1)
         return max(ans,0);
-    
+
     int prev_prev = prev;
     int prev_ans = ans;
     a[0] += prev;
@@ -30,7 +30,7 @@ int kConcatenationMaxSum(vector<int>&a, int k) {
     ans=res.second;
     if(prev_prev == prev)
         return max(prev_ans, max(ans, 0));
-    
+
     int increase = ans - prev_ans;
 
     return (prev_ans%M+(((long long)k-1)*(increase))%M)%M; 
